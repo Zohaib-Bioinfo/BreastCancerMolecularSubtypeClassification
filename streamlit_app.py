@@ -10,11 +10,11 @@ import seaborn as sns
 # -----------------------------
 # LOAD MODELS
 # -----------------------------
-model = pickle.load(open("model.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
-selector = pickle.load(open("selector.pkl", "rb"))
-genes = pickle.load(open("genes.pkl", "rb"))
-encoder = pickle.load(open("encoder.pkl", "rb"))
+model = pickle.load(open("models/model.pkl", "rb"))
+scaler = pickle.load(open("models/scaler.pkl", "rb"))
+selector = pickle.load(open("models/selector.pkl", "rb"))
+genes = pickle.load(open("data/genes.pkl", "rb"))
+encoder = pickle.load(open("models/encoder.pkl", "rb"))
 
 st.set_page_config(page_title="Breast Cancer Transcriptomics", layout="wide")
 
